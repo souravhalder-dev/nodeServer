@@ -1,6 +1,38 @@
 [
   {
     "id": 1,
-    "name": "sourav"
+    "name": "sourav",
+    "price": 800,
+    "deprecated": true
+  },
+  {
+    "id": 2,
+    "name": "rahim",
+    "price": 1200,
+    "deprecated": false
+  },
+  {
+    "id": 3,
+    "name": "karim",
+    "price": 950,
+    "deprecated": true
+  },
+  {
+    "id": 4,
+    "name": "hasan",
+    "price": 1500,
+    "deprecated": false
+  },
+  {
+    "id": 5,
+    "name": "mim",
+    "price": 700,
+    "deprecated": true
+  },
+  {
+    "id": 6,
+    "name": "tania",
+    "price": 1100,
+    "deprecated": false
   }
 ]

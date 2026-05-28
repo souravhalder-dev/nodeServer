@@ -39,6 +39,7 @@ export const productController = async (
       }),
     );
   } else if (method === "POST" && url === "/product") {
+    // data post to database
     const body = await porseBody(req);
     const product = readProduct();
     const newProduct = {
@@ -56,6 +57,47 @@ export const productController = async (
       JSON.stringify({
         message: "create is done ",
         //   data: oneProduct,
+      }),
+    );
+  } else if (method === "PUT" && id !== null) {
+    const body = await porseBody(req);
+
+    const product = readProduct();
+
+    const index = product.findIndex((p: Iproduct) => p.id === id);
+
+    // product না পেলে
+    if (index < 0) {
+      res.writeHead(404, {
+        "content-type": "application/json",
+      });
+
+      return res.end(
+        JSON.stringify({
+          message: "product not found",
+          data: null,
+        }),
+      );
+    }
+
+    // product পেলে update হবে
+    product[index] = {
+      id: product[index].id,
+      ...body,
+    };
+
+    console.log(product[index]);
+
+    insertProduct(product);
+
+    res.writeHead(200, {
+      "content-type": "application/json",
+    });
+
+    res.end(
+      JSON.stringify({
+        message: "modify is done",
+        data: product[index],
       }),
     );
   }

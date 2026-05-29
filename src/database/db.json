@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "id": 3,
@@ -6,3 +7,6 @@
     "price": 2500
   }
 ]
+=======
+[{"id":1,"name":"sourav","price":800,"deprecated":true},{"id":2,"name":"rahim","price":1200,"deprecated":false},{"id":3,"name":"Add your name in the body"},{"id":4,"name":"hasan","price":1500,"deprecated":false},{"id":5,"name":"mim","price":700,"deprecated":true},{"id":6,"name":"tania","price":1100,"deprecated":false},{"0":{"name":"Sourav"},"id":1779961475306},{"0":{"name":"Sourav Halder","price":800000,"deprecated":true},"id":1779961717071},{"id":1779961974081,"name":"Add your name in the body"},{"0":{"name":"Sourav Halder -4","price":800000,"deprecated":true},"id":1779962050065},{"id":1779962294748,"name":"Add your name in the body"},{"id":1779995127430,"name":"Add your name in the body"}]
+>>>>>>> 48cac8948ba48fe726c75491c84b80c9e225c171

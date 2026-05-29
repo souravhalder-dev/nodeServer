@@ -10,10 +10,8 @@
     "module": "esnext",
     "target": "esnext",
     "types": ["node"],
-<<<<<<< HEAD
     "moduleResolution": "bundler",
-=======
->>>>>>> 48cac8948ba48fe726c75491c84b80c9e225c171
+
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -38,11 +36,7 @@
 
     // Recommended Options
     "strict": true,
-<<<<<<< HEAD
     // "jsx": "react-jsx",
-=======
-    //"jsx": "react-jsx",
->>>>>>> 48cac8948ba48fe726c75491c84b80c9e225c171
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
